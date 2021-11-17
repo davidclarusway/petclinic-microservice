@@ -1,6 +1,6 @@
 pipeline {
     agent any
-     environment {
+    environment {
         PATH=sh(script:"echo $PATH:/usr/local/bin", returnStdout:true).trim()
         APP_NAME="petclinic"
         APP_STACK_NAME="Matt-$APP_NAME-App-QA-${BUILD_NUMBER}"
